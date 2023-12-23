@@ -52,6 +52,7 @@
                         if (resp.status === 201) {
                             window.alert("image uploaded");
                             this.handleRetrieval();
+                            this.$refs.file.value = null;
                         }
                     }
                 );
